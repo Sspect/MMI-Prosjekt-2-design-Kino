@@ -1,7 +1,9 @@
 body{
-    background-color: rgb(255, 255, 255);
+    color: white;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+   
+}
+.oppgave-kontainer{
     margin: 200px;
     margin-top: 10px;
     margin-bottom: 10px;

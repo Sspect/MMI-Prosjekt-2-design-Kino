@@ -1,17 +1,1250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototype</title>
+    <!-- Bootstrap bibiliotek ///////////////////////////////////////////////////////////// -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- stylesheet.scc -->
     <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- index.scc -->
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/index.js"></script>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Prosjekt 2 - design prototype</h1>
-    <!-- Knapp som lenker til oppgave esten -->
-    <a href="oppgaveTekst.html"><button>Oppgavetekst</button></a>
-    <img src="img/Screenshot 2023-10-13 172704.png" alt="bilde av knapper">
-    
+
+
+
+    <!-- NAVBAR ///////////////////////////////////////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Hjem</a>
+        <div>
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Filmer</a>
+            <a class="nav-item nav-link" href="oppgaveTekst.html">Oppgavetekst</a>
+          </div>
+        </div>
+      </nav>
+    <br>
+    <!-- NAVBAR ///////////////////////////////////////////////////////////////// -->
+
+
+
+
+    <div class="container">
+
+        <div class="row"><h1>Kino landsbyen</h1></div>
+        <div class="row"><h2>Filmer denne uken</h2></div>
+
+        
+        <br><br><br>
+        <div class="row"><h2>Avengers endgame</h2></div>
+
+
+        <div class="row">
+            <!-- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLtlUN28_mJ5nQQsw5bXGoaiJRIqweu4hFsWEzzF13W_jweE0 -->
+            <div class="col">
+                <img src="img/avengers endgame.png" alt="">
+            </div>
+
+            <!-- mandag __________________________________________ -->
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Mandag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Tirsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Tirsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Onsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Onsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Torsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Torsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Fredag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Fredag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Lørdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Lørdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+             <!-- Søndag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Søndag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+
+        <br><br><br>
+        <div class="row"><h2>The Joker</h2></div>
+
+        <div class="row">
+            <!-- https://www.imdb.com/title/tt7286456/mediaviewer/rm3353122305/?ref_=tt_ov_i -->
+            <div class="col">
+                <img src="img/theJoker.png" alt="">
+            </div>
+
+            <!-- mandag __________________________________________ -->
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Mandag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Tirsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Tirsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Onsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Onsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Torsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Torsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Fredag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Fredag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Lørdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Lørdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+             <!-- Søndag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Søndag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+
+
+        <br><br><br>
+        <div class="row"><h2>Toy Story 4</h2></div>
+
+        <div class="row">
+            <!-- https://m.media-amazon.com/images/I/714hR8KCqaL._AC_SL1308_.jpg -->
+            <div class="col">
+                <img src="img/ToyStory4.png" alt="">
+            </div>
+
+            <!-- mandag __________________________________________ -->
+            <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Mandag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Tirsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Tirsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Onsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Onsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Torsdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Torsdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Fredag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Fredag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- Lørdag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Lørdag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+             <!-- Søndag __________________________________________ -->
+             <div class="col">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4>Søndag</h4>
+                    </div>
+                </div>
+                
+                <!-- 2D _______________ -->
+                <div class="dagknapp" onclick="goToSal1()">
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 1 - 2D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- 3D _______________ -->
+                <div class="dagknapp" onclick="goToSal2()"> 
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            Sal 2 - 3D
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">   
+                            Klokken
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center deg-tekst">
+                            12:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+            
+
+            
+
+            
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        </div>
+
+
+            
+
+    </div>
 </body>
 </html>
